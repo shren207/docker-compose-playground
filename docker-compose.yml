@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  next:
+    container_name: next
+    build: .
+    ports:
+      - "8080:3000"
+    environment:
+      A: "WE-AR"
+    restart: always
+
