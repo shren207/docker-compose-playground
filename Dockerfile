@@ -21,6 +21,3 @@ EXPOSE 3000
 
 # 어플리케이션 실행
 CMD ["yarn", "dev"]
-
-
-# hello world
