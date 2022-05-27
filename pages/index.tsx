@@ -1,4 +1,6 @@
-import { GetServerSideProps, NextPage, InferGetServerSidePropsType} from 'next';
+
+// index.tsx
+import {GetServerSideProps, NextPage} from 'next';
 
 interface HomeProps {
   A: string;
@@ -10,9 +12,8 @@ const Home: NextPage<HomeProps> = ({ A }) => {
   )
 }
 
-export const getServerSideProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const A = process.env.A
-  
   return {
     props: {
       A
