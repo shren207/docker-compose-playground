@@ -13,7 +13,7 @@ const Home: NextPage<HomeProps> = ({ A }) => {
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const A = process.env.A
+  const A = process.env.Aㅇ
   return {
     props: {
       A
@@ -22,3 +22,4 @@ export const getServerSideProps: GetServerSideProps = async () => {
 }
 
 export default Home
+

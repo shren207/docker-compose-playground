@@ -1,3 +1,4 @@
+# Dockerfile
 FROM node:18.2.0-alpine
 
 # Set the working directory
@@ -21,3 +22,4 @@ EXPOSE 3000
 
 # 어플리케이션 실행
 CMD ["yarn", "dev"]
+
